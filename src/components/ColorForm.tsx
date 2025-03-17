@@ -16,24 +16,26 @@ const ColorForm: React.FC<ColorFormProps> = ({
   errorMessage,
 }) => {
   return (
-    <div className="mt-4 flex">
-      <input
-        type="text"
-        placeholder="Color Name"
-        value={newColor.name}
-        onChange={(e) => setNewColor({ ...newColor, name: e.target.value })}
-        className="border p-2 mr-2"
-      />
-      <input
-        type="text"
-        placeholder="Hex Code"
-        value={newColor.hex}
-        onChange={(e) => setNewColor({ ...newColor, hex: e.target.value })}
-        className="border p-2 mr-2"
-      />
-      <button onClick={addColor} className="bg-blue-500 text-white p-2">
-        Add Color
-      </button>
+    <div className="mt-4">
+      <div className="flex items-center mb-2">
+        <input
+          type="text"
+          placeholder="Color Name"
+          value={newColor.name}
+          onChange={(e) => setNewColor({ ...newColor, name: e.target.value })}
+          className="border p-2 mr-2"
+        />
+        <input
+          type="text"
+          placeholder="Hex Code"
+          value={newColor.hex}
+          onChange={(e) => setNewColor({ ...newColor, hex: e.target.value })}
+          className="border p-2 mr-2"
+        />
+        <button onClick={addColor} className="bg-blue-500 text-white p-2">
+          Add Color
+        </button>
+      </div>
       {errorMessage && <div className="text-red-500 mt-2">{errorMessage}</div>}
     </div>
   );
