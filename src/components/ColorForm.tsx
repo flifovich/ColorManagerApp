@@ -1,4 +1,3 @@
-// ColorForm.tsx
 import React from "react";
 
 type ColorFormProps = {
