@@ -25,6 +25,10 @@ git clone https://github.com/your-username/color-manager-app.git
 npm install
 ```
 
+### 3. Create environment variable
+
+Create .env.local file and environment variable NEXT_PUBLIC_BASE_URL=http://localhost:3000
+
 ### 3. Run the development server
 
 ```bash
